@@ -4,7 +4,10 @@
   <local-check-config name="ttest" location="/Users/enpro1/git/Palladio-Build-CodingConventions/misc/org.palladiosimulator.codeconventions/palladio-checkstyle-rules.xml" type="external" description="">
     <additional-data name="protect-config-file" value="false"/>
   </local-check-config>
-  <fileset name="all" enabled="true" check-config-name="ttest" local="true">
+  <local-check-config name="test" location="palladio-checkstyle-rules.xml" type="project" description="">
+    <additional-data name="protect-config-file" value="false"/>
+  </local-check-config>
+  <fileset name="all" enabled="true" check-config-name="test" local="true">
     <file-match-pattern match-pattern="." include-pattern="true"/>
   </fileset>
 </fileset-config>
